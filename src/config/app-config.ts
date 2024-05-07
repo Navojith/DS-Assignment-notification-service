@@ -6,6 +6,7 @@ export interface AppConfig {
   baseUrls: {
     courseManagementService: string;
     authService: string;
+    frontend: string;
   };
   sendGrid: {
     key: string;
