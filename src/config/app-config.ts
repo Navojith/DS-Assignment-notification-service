@@ -17,4 +17,10 @@ export interface AppConfig {
       courseRegistration: string;
     };
   };
+  sms: {
+    uid: string;
+    apiKey: string;
+    senderId: string;
+    url: string;
+  };
 }

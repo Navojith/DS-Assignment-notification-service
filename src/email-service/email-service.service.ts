@@ -12,6 +12,9 @@ export class EmailServiceService {
       if (!createEmailServiceDto.email) {
         throw new HttpException('email is required', HttpStatus.BAD_REQUEST);
       }
+      if (!createEmailServiceDto.type) {
+        throw new HttpException('type is required', HttpStatus.BAD_REQUEST);
+      }
 
       if (createEmailServiceDto.type === EMAIL_TYPES.course_registration) {
         if (
