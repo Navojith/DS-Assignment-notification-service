@@ -4,5 +4,4 @@ export class CreateEmailServiceDto {
   readonly name?: string;
   readonly courseId?: string;
   readonly courseName?: string;
-  readonly context?: string;
 }
