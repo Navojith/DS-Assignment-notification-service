@@ -55,7 +55,7 @@ export class EmailServiceService {
             createEmailServiceDto.type === EMAIL_TYPES.new_user_registration
               ? `${configData.baseUrls.frontend}`
               : createEmailServiceDto.type === EMAIL_TYPES.course_registration
-                ? `${configData.baseUrls.frontend}/courses/${createEmailServiceDto.courseId}`
+                ? `${configData.baseUrls.frontend}/course/${createEmailServiceDto.courseId}`
                 : '',
           name:
             createEmailServiceDto.type === EMAIL_TYPES.new_user_registration
